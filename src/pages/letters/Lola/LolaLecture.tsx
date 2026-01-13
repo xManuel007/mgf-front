@@ -1,5 +1,4 @@
 import { Laguna, Lola, Luna, Pala } from '@/assets/L-Lola'
-import React from 'react'
 
 const LolaLecture
  = () => {

@@ -1,5 +1,4 @@
 import { Bolso, Oso, Reboso, Rosa, Sol, Sombrero } from '@/assets/S-Sol'
-import React from 'react'
 
 const SolLecture = () => {
   return (

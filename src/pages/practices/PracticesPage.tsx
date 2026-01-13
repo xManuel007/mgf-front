@@ -1,5 +1,4 @@
 import PracticeCard from '@/components/ui/practiceCard'
-import React from 'react'
 import { Sol } from '@/assets/S-Sol'
 import { Mama } from '@/assets/M-Mama';
 import { Lola } from '@/assets/L-Lola';

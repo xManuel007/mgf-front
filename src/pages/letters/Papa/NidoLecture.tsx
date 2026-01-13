@@ -1,5 +1,4 @@
 import { Palma, Papa, Pina, Pino } from '@/assets/P-Papa'
-import React from 'react'
 
 const PapaLecture
  = () => {

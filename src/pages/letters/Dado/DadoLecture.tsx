@@ -1,5 +1,4 @@
 import { Dado, Nido, Sandia } from '@/assets/D-Dado'
-import React from 'react'
 
 const DadoLecture = () => {
   return (

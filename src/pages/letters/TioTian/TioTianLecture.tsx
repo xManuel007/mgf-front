@@ -1,5 +1,4 @@
 import { Pato, Tehuacan, TioTian } from '@/assets/T-TioTian'
-import React from 'react'
 
 const TioTianLecture = () => {
   return (

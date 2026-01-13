@@ -1,5 +1,4 @@
 import { Casa, Lima, Maiz, Mama, Memo, Mina } from '@/assets/M-Mama'
-import React from 'react'
 
 const MamaLecture = () => {
   return (

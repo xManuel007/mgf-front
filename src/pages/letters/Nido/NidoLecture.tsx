@@ -1,6 +1,5 @@
 import { Nido } from '@/assets/D-Dado'
 import { Antena, Campana, Cuna } from '@/assets/N-Nido'
-import React from 'react'
 
 const NidoLecture = () => {
   return (
