@@ -1,0 +1,5 @@
+export { default as Antena } from './Antena.png'
+export { default as Campana } from './Campana.png'
+export { default as Cuna } from './Cuna.png'
+export { default as Luna } from './Luna.png'
+export { default as Nido } from './Nido.png'

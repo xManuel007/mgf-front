@@ -1,0 +1,6 @@
+export {default as Sol} from './Sol.png'
+export {default as Oso} from './Oso.png'
+export {default as Bolso} from './Bolso.png'
+export {default as Rosa} from './Rosa.png'
+export {default as Reboso} from './Reboso.png'
+export {default as Sombrero} from './Sombrero.png'

@@ -1,0 +1,5 @@
+export { default as Papa } from './Papa.png'
+export { default as Palma } from './Palma.png'
+export { default as PalmaMariposa } from './PalmaMariposa.png'
+export { default as Pina } from './Pina.png'
+export { default as Pino } from './Pino.png'

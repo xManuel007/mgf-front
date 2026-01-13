@@ -1,0 +1,6 @@
+export {default as Mama} from './Mama.png'
+export {default as Casa} from './Casa.png'
+export {default as Lima} from './Lima.png'
+export {default as Maiz} from './Maiz.png'
+export {default as Memo} from './Memo.png'
+export {default as Mina} from './Mina.png'

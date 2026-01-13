@@ -1,9 +1,8 @@
-import MainLayout from "./layouts/MainLayout"
 
 function App() {
   return (
-    <div>
-      <MainLayout/>
+    <div className="w-screen h-screen flex justify-center items-center">
+      Prototipo de aplicacion para el aprendizaje de lectura por Metodo Global Fonetico
     </div>
   )
 }

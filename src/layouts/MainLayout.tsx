@@ -4,11 +4,13 @@ import { Outlet } from 'react-router'
 
 const MainLayout = () => {
   return (
-    <div className='flex justify-between flex-col h-screen'>
+    <div className="h-screen">
       <Header />
-      <main>
+
+      <main className="pt-14 pb-20 overflow-y-auto h-full">
         <Outlet />
       </main>
+
       <Navbar />
     </div>
   )
