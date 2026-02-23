@@ -1,10 +1,10 @@
 import PracticeCard from '@/components/ui/practiceCard'
-import { Sol } from '@/assets/S-Sol'
-import { Mama } from '@/assets/M-Mama';
-import { Lola } from '@/assets/L-Lola';
-import { Dado, Nido } from '@/assets/D-Dado';
-import { Papa } from '@/assets/P-Papa';
-import { TioTian } from '@/assets/T-TioTian';
+import { Sol } from '@/features/sol/assets'
+import { Mama } from '@/features/mama/assets';
+import { Lola } from '@/features/lola/assets';
+import { Dado, Nido } from '@/features/dado/assets';
+import { Papa } from '@/features/papa/assets';
+import { TioTian } from '@/features/tioTian/assets';
 
 const PracticesList = () => {
   const letters = [

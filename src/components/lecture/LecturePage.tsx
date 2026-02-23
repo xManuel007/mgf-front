@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import type { LectureData, LectureToken } from '@/lectures/types'
+import type { LectureData, LectureToken } from '@/features/types'
 import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded'
 import PauseRoundedIcon from '@mui/icons-material/PauseRounded'
 import ReplayRoundedIcon from '@mui/icons-material/ReplayRounded'

@@ -1,5 +1,5 @@
-import type { LectureData } from './types'
-import { Pato, Tehuacan, TioTian } from '@/assets/T-TioTian'
+import type { LectureData } from '../../../types'
+import { Pato, Tehuacan, TioTian } from '@/features/tioTian/assets'
 
 export const tioTianLecture: LectureData = {
   letter: 't',

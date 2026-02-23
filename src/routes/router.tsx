@@ -12,7 +12,7 @@ import RegisterPage from '@/pages/auth/RegisterPage'
 import ProtectedRoute from './ProtectedRoutes'
 import LandingPageLayout from '@/layouts/LandingPageLayout'
 import LandingPage from '@/pages/landing/LandingPage'
-import LetterRouter from '@/pages/letters/LetterRouter'
+import LetterPage from '@/pages/letters/LetterPage'
 
 export const router = createBrowserRouter([
   {
@@ -40,8 +40,8 @@ export const router = createBrowserRouter([
       { path: '/config', element: <App /> },
 
       {
-        path: '/practices/:slug',
-        element: <LetterRouter />
+        path: '/practices/:letter',
+        element: <LetterPage />
       },
     ],
   },

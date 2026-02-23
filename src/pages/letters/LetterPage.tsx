@@ -1,16 +1,23 @@
-import { LecturePage } from '@/components/lecture/LecturePage'
-import { lecturesMap } from '@/lectures'
+import { LecturePage } from "@/components/lecture/LecturePage"
+import { featuresMap } from "@/features"
+import { useParams } from "react-router"
 
-type Props = {
-  slug: keyof typeof lecturesMap
-}
+export default function LetterPage() {
+  const { letter, activity } = useParams()
 
-export const LetterPage = ({ slug }: Props) => {
-  const lectureData = lecturesMap[slug]
+  const normalizedLetter = letter?.toLowerCase()
+  const feature = normalizedLetter
+    ? featuresMap[normalizedLetter]
+    : undefined
 
-  if (!lectureData) {
-    return <div>No existe la lección</div>
-  }
+  if (!feature) return <div>No existe</div>
 
-  return <LecturePage data={lectureData} />
+  const activityKey =
+    (activity as keyof typeof feature.activities) ?? 'lecture'
+
+  const activityData = feature.activities[activityKey]
+
+  if (!activityData) return <div>No existe</div>
+
+  return <LecturePage data={activityData} />
 }

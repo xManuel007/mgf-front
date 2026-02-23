@@ -1,5 +1,5 @@
-import type { LectureData } from './types'
-import { Palma, Papa, Pina, Pino } from '@/assets/P-Papa'
+import type { LectureData } from '../../../types'
+import { Palma, Papa, Pina, Pino } from '@/features/papa/assets'
 
 export const papaLecture: LectureData = {
   letter: 'p',

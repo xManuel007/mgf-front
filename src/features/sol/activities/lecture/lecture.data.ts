@@ -1,5 +1,5 @@
-import type { LectureData } from './types'
-import { Bolso, Oso, Reboso, Rosa, Sol, Sombrero } from '@/assets/S-Sol'
+import type { LectureData } from '../../../types'
+import { Bolso, Oso, Reboso, Rosa, Sol, Sombrero } from '@/features/sol/assets'
 
 export const solLecture: LectureData = {
   letter: 's',

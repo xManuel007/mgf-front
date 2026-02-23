@@ -1,5 +1,5 @@
-import { Casa, Lima, Maiz, Mama, Memo } from '@/assets/M-Mama'
-import type { LectureData } from './types'
+import { Casa, Lima, Maiz, Mama, Memo } from '@/features/mama/assets'
+import type { LectureData } from '../../../types'
 
 export const mamaLecture: LectureData = {
   letter: 'm',

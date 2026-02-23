@@ -8,3 +8,11 @@ export type LectureData = {
   mainImage: string
   content: LectureToken[][]
 }
+
+
+export type Feature = {
+  slug: string
+  activities: {
+    lecture: LectureData
+  }
+}

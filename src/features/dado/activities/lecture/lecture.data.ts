@@ -1,5 +1,5 @@
-import { Dado, Nido, Sandia } from '@/assets/D-Dado'
-import type { LectureData } from './types'
+import { Dado, Nido, Sandia } from '@/features/dado/assets'
+import type { LectureData } from '../../../types'
 
 export const dadoLecture: LectureData = {
   letter: 'd',

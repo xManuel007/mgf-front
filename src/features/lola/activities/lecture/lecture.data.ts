@@ -1,5 +1,5 @@
-import type { LectureData } from './types'
-import { Laguna, Lola, Luna, Pala } from '@/assets/L-Lola'
+import type { LectureData } from '../../../types'
+import { Laguna, Lola, Luna, Pala } from '@/features/lola/assets'
 
 export const lolaLecture: LectureData = {
   letter: 'l',

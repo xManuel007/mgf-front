@@ -1,6 +1,6 @@
-import { Antena, Campana, Cuna } from '@/assets/N-Nido'
-import type { LectureData } from './types'
-import { Nido } from '@/assets/D-Dado'
+import { Nido } from '@/features/dado/assets'
+import type { LectureData } from '../../../types'
+import { Antena, Campana, Cuna } from '@/features/nido/assets'
 
 export const nidoLecture: LectureData = {
   letter: 'n',
