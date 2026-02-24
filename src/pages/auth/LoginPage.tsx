@@ -1,6 +1,6 @@
 import Button from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent } from '@/components/ui/card'
 import { Label } from '@/components/ui/label'
 import { NavLink, useNavigate } from 'react-router'
 import { useAuth } from '@/context/useAuth'
@@ -15,50 +15,67 @@ const LoginPage = () => {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-blue-50 px-4">
-      <Card className="w-full max-w-sm shadow-lg">
-        <CardHeader className="text-center">
-          <CardTitle className="text-2xl font-bold">
-            Bienvenido 👋
-          </CardTitle>
-          <p className="text-sm text-muted-foreground">
-            Inicia sesión para continuar
+    <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-blue-100 via-sky-100 to-indigo-100 px-4">
+
+      <div className="w-full max-w-sm space-y-6">
+
+        {/* Ilustración / Mascota */}
+        <div className="flex flex-col items-center">
+          <div className="w-24 h-24 bg-white rounded-full shadow-md flex items-center justify-center text-4xl">
+            📚
+          </div>
+          <h1 className="text-2xl font-bold mt-4 text-center text-blue-700">
+            ¡Hola!
+          </h1>
+          <p className="text-sm text-blue-600 text-center">
+            Vamos a aprender juntos
           </p>
-        </CardHeader>
+        </div>
 
-        <CardContent className="space-y-4">
-          <div className="space-y-1">
-            <Label htmlFor="email">Correo</Label>
-            <Input
-              id="email"
-              type="email"
-              placeholder="correo@ejemplo.com"
-            />
-          </div>
+        <Card className="rounded-3xl shadow-xl border-0">
+          <CardContent className="space-y-5 p-6">
 
-          <div className="space-y-1">
-            <Label htmlFor="password">Contraseña</Label>
-            <Input
-              id="password"
-              type="password"
-              placeholder="••••••••"
-            />
-          </div>
+            <div className="space-y-2">
+              <Label htmlFor="email" className="text-blue-700">
+                Correo
+              </Label>
+              <Input
+                id="email"
+                type="email"
+                placeholder="correo@ejemplo.com"
+                className="rounded-xl"
+              />
+            </div>
 
-          <Button onClick={handleLogin} className="w-full mt-2">
-            Iniciar sesión
-          </Button>
+            <div className="space-y-2">
+              <Label htmlFor="password" className="text-blue-700">
+                Contraseña
+              </Label>
+              <Input
+                id="password"
+                type="password"
+                placeholder="••••••••"
+                className="rounded-xl"
+              />
+            </div>
 
-          <p className="text-center text-sm text-muted-foreground">
-            ¿No tienes cuenta?{' '}
-            <span className="underline cursor-pointer">
-              <NavLink to="/register">
+            <Button
+              onClick={handleLogin}
+              className="w-full mt-2 h-12 rounded-2xl text-lg bg-green-400 hover:bg-green-500 transition-transform hover:scale-105"
+            >
+              Entrar 🚀
+            </Button>
+
+            <p className="text-center text-sm text-blue-600">
+              ¿No tienes cuenta?{' '}
+              <NavLink to="/register" className="underline font-medium">
                 Regístrate
               </NavLink>
-            </span>
-          </p>
-        </CardContent>
-      </Card>
+            </p>
+
+          </CardContent>
+        </Card>
+      </div>
     </div>
   )
 }

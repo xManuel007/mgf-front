@@ -2,76 +2,79 @@ import { NavLink } from 'react-router'
 
 const LandingPage = () => {
   return (
-    <main className="min-h-screen bg-gray-50 flex items-center justify-center px-6 font-sans">
-      <section className="max-w-3xl bg-white rounded-2xl shadow-lg p-8 space-y-8">
+    <main className="min-h-screen bg-linear-to-br from-slate-50 to-blue-50 font-sans">
 
-        <header className="text-center space-y-3">
-          <h1 className="text-3xl font-bold text-gray-800">
-            Una app para aprender a leer, paso a paso
-          </h1>
-          <p className="text-gray-600 text-lg">
-            Basada en metodologías clásicas de lecto-escritura, adaptadas al mundo digital.
-          </p>
-        </header>
+      {/* HERO */}
+      <section className="min-h-[70vh] flex flex-col items-center justify-center text-center px-6">
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 max-w-3xl leading-tight">
+          Aprende a leer con un método claro, estructurado y acompañado.
+        </h1>
+
+        <p className="mt-6 text-lg text-gray-600 max-w-2xl">
+          Una experiencia digital basada en el método global fonético,
+          diseñada para que el adulto guíe y el niño avance con seguridad.
+        </p>
+
+        <NavLink
+          to="/login"
+          className="mt-10 px-10 py-5 text-lg rounded-2xl bg-blue-600 text-white font-semibold shadow-lg hover:bg-blue-700 hover:scale-105 transition-transform"
+        >
+          Iniciar sesión
+        </NavLink>
+
+      </section>
+
+      {/* INFO SECTION */}
+      <section className="max-w-5xl mx-auto px-6 pb-20">
+
+        <div className="grid md:grid-cols-2 gap-10">
 
           <div className="space-y-3">
             <h2 className="font-semibold text-gray-800 text-xl">
-              Metodología
+              Metodología estructurada
             </h2>
             <p className="text-gray-600">
-              Cada lección está pensada como una experiencia guiada.
-              El adulto acompaña, la app apoya y el niño avanza a su ritmo,
-              reforzando la lectura y la escritura de forma natural.
+              Cada lección sigue una secuencia progresiva.
+              El adulto acompaña el proceso y la app refuerza el aprendizaje
+              mediante lectura guiada y actividades prácticas.
             </p>
           </div>
 
           <div className="space-y-3">
             <h2 className="font-semibold text-gray-800 text-xl">
-              Motivación
+              Aprendizaje en contexto
             </h2>
             <p className="text-gray-600">
-              Las historias, palabras e imágenes despiertan curiosidad.
-              Las vocales y consonantes se presentan dentro de narraciones
-              vivas, para que leer se sienta espontáneo y divertido.
+              Las letras se presentan dentro de palabras e historias,
+              favoreciendo la comprensión antes que la memorización aislada.
             </p>
           </div>
 
           <div className="space-y-3">
             <h2 className="font-semibold text-gray-800 text-xl">
-              Práctica
+              Motivación constante
             </h2>
             <p className="text-gray-600">
-              No se memoriza una letra aislada: se descubre en contexto.
-              Las actividades están diseñadas para que el niño identifique,
-              repita y use lo aprendido de forma activa.
+              Ilustraciones y dinámicas interactivas mantienen la atención
+              y fortalecen la asociación entre sonido y significado.
             </p>
           </div>
 
           <div className="space-y-3">
             <h2 className="font-semibold text-gray-800 text-xl">
-              Refuerzo del aprendizaje
+              Refuerzo visual y práctico
             </h2>
             <p className="text-gray-600">
-              Las letras y sílabas clave se destacan visualmente.
-              Las ilustraciones y ejercicios fomentan la participación,
-              la creatividad y la consolidación del aprendizaje.
+              Se destacan sílabas clave y se integran ejercicios
+              que consolidan el aprendizaje de manera natural.
             </p>
           </div>
 
         </div>
 
-        <footer className="pt-6 flex justify-center">
-          <NavLink
-            to="/login"
-            className="px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition"
-          >
-            Comenzar
-          </NavLink>
-        </footer>
-
       </section>
+
     </main>
   )
 }
