@@ -22,7 +22,7 @@ const LoginPage = () => {
         {/* Ilustración / Mascota */}
         <div className="flex flex-col items-center">
           <div className="w-24 h-24 bg-white rounded-full shadow-md flex items-center justify-center text-4xl">
-            📚
+            <img alt='logo' src='/mgfLogo.png'/>
           </div>
           <h1 className="text-2xl font-bold mt-4 text-center text-blue-700">
             ¡Hola!

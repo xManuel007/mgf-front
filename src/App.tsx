@@ -5,11 +5,11 @@ function App() {
   const navigate = useNavigate()
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-sky-100 via-blue-100 to-indigo-100 flex flex-col items-center justify-center px-6 text-center">
+    <div className="h-[85vh] flex flex-col items-center justify-center px-6 text-center">
 
       {/* Icono / Mascota */}
       <div className="w-28 h-28 bg-white rounded-full shadow-lg flex items-center justify-center text-5xl mb-6">
-        📖
+        <img alt='logo' src='/mgfLogo.png'/>
       </div>
 
       {/* Título */}

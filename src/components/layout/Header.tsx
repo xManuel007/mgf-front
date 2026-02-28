@@ -12,8 +12,8 @@ const Header = () => {
       "
     >
       {/* Logo / Marca */}
-      <div className="text-lg font-bold tracking-wide">
-        MGF
+      <div className="text-lg font-bold tracking-wide flex items-center">
+        <img src="/mgfLogo.png" alt="logo" className="h-10 w-auto"/>etodo Global Fonetico
       </div>
 
       {/* Acciones (placeholder) */}

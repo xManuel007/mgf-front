@@ -7,6 +7,8 @@ import { solFeature } from "./sol";
 import { tioTianFeature } from "./tioTian";
 import type { Feature } from "./types";
 
+// Exportar features individuales
+export { dadoFeature, lolaFeature, mamaFeature, nidoFeature, papaFeature, solFeature, tioTianFeature }
 
 export const featuresMap: Record<string, Feature> = {
   dado: dadoFeature,

@@ -9,10 +9,19 @@ export type LectureData = {
   content: LectureToken[][]
 }
 
+export interface DrawActivity {
+  id: string
+  title: string
+  description: string
+  letter: string
+  instructions: string
+  difficulty: 'easy' | 'medium' | 'hard'
+}
 
 export type Feature = {
   slug: string
   activities: {
     lecture: LectureData
+    draw?: DrawActivity[]
   }
 }
